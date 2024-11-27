@@ -38,9 +38,14 @@ button.addEventListener("click", (e) => {
 
     const columns = document.querySelectorAll(".column")
         columns.forEach((column)=> {
+            r = Math.floor(Math.random() * 256);
+            g = Math.floor(Math.random() * 256);
+            b = Math.floor(Math.random() * 256);
+            const randomColor = `rgb(${r}, ${g}, ${b})`;
+
             column.addEventListener("mouseenter", (e) => {
-                column.classList.add("filled");
+                column.style["background-color"] = randomColor;
             })
-})
+        })
 })
 
