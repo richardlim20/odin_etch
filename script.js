@@ -5,9 +5,15 @@ column.classList.add("column");
 const button = document.createElement("button");
 button.innerHTML= "what size";
 const gridContainer = document.createElement("div");
-gridContainer.id = "gridContainer";
+gridContainer.id = "grid-container";
+const buttonContainer = document.createElement("div");
+buttonContainer.id = "button-container";
+const header = document.createElement("h1");
+header.innerHTML = "Odin Etch-A-Sketch";
 
-document.body.appendChild(button);
+document.body.appendChild(header);
+buttonContainer.appendChild(button);
+document.body.appendChild(buttonContainer);
 document.body.appendChild(gridContainer);
 
 const createRows = (rowNum) => {

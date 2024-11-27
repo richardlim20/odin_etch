@@ -1,6 +1,6 @@
 .row {
     display: flex;
-    width: 32rem;
+    width: 46rem;
 }
 
 .column {
@@ -10,6 +10,27 @@
     border: solid black 1px;
 }
 
-.filled {
-    background-color: black;
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+
+}
+
+#grid-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
 }
